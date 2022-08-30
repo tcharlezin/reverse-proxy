@@ -21,7 +21,7 @@
 	}
 }
 
-tcharlez.in {
+tcharlez.in www.tcharlez.in {
 	encode zstd gzip
 	import static
 	import security
@@ -39,4 +39,8 @@ swarm.tcharlez.in {
 
 broker.tcharlez.in {
 	reverse_proxy http://broker-service:8080
+}
+
+go-app-concurrency.tcharlez.in {
+	reverse_proxy http://go-app-concurrency:80
 }
