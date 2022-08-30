@@ -29,6 +29,14 @@ tcharlez.in www.tcharlez.in {
 	reverse_proxy  http://site:8080
 }
 
+go-app-concurrency.tcharlez.in {
+    encode zstd gzip
+	import static
+	import security
+
+	reverse_proxy http://go-app-concurrency:80
+}
+
 swarm.tcharlez.in {
 	encode zstd gzip
 	import static
@@ -39,8 +47,4 @@ swarm.tcharlez.in {
 
 broker.tcharlez.in {
 	reverse_proxy http://broker-service:8080
-}
-
-go-app-concurrency.tcharlez.in {
-	reverse_proxy http://go-app-concurrency:80
 }
