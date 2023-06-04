@@ -49,7 +49,7 @@ broker.tcharlez.in {
 	reverse_proxy http://broker-service:8080
 }
 
-laravele.tcharlez.in {
+laravel.tcharlez.in {
 	encode zstd gzip
 	import static
 	import security
