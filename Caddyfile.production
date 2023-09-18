@@ -56,3 +56,11 @@ laravel.tcharlez.in {
 
 	reverse_proxy  http://laravel-webserver:8090
 }
+
+habilidade.org www.habilidade.org {
+	encode zstd gzip
+	import static
+	import security
+
+	reverse_proxy  http://habilidade-webserver:8070
+}
